@@ -1,4 +1,4 @@
 JA21_PORTABLE_ROOT=
 JA21_VERSION=9.8.7
 LINK_TARGET=optical-desktop\portable
-NOTE=Set JA21_PORTABLE_ROOT in the environment or edit this file. The external JA21 payload is intentionally not bundled.
+NOTE=Set JA21_PORTABLE_ROOT env, edit this file, copy from PRODUCT_LINK.example, or run scripts\configure-product-links.cmd. External JA21 is not bundled.

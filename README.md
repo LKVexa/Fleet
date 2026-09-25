@@ -2,7 +2,7 @@
 
 **Fleet** is the Windows-safe **Harbor Bridge Terminal (HBT) 2.1.0-cubby.2** package: containership yard + HERMIT/SPIRAL bridge + Qnode/DF/mobile **cubbies**, projected in-browser on loopback (no VM download).
 
-Copyright (c) 2026 **RUSSELL PHILIP SMITHSON** — see [`COPYRIGHT`](COPYRIGHT) and [`LICENSE`](LICENSE) (Product Preview Tester License).
+Copyright (c) 2026 **RUSSELL PHILIP SMITHSON** â€” see [`COPYRIGHT`](COPYRIGHT) and [`LICENSE`](LICENSE) (Product Preview Tester License).
 
 > Product Preview (evaluation / tester feedback only). Not a production or OSI open-source grant.
 
@@ -20,8 +20,31 @@ Copyright (c) 2026 **RUSSELL PHILIP SMITHSON** — see [`COPYRIGHT`](COPYRIGHT) 
 
 Related development tree: [LKVexa/Harbor-Bridge-Terminal](https://github.com/LKVexa/Harbor-Bridge-Terminal).
 
-## License
+## External product links (QVM / JA21 / mobile)
 
+Harbor does **not** bundle QVM, VB-JA21, Bottle Rocket, iOS735, LinearAndroid, or RODEO. Point at local trees with:
+
+| Env var | PRODUCT_LINK key | Rematerialize |
+|---------|------------------|---------------|
+| `QVM_PRODUCT_ROOT` | `qvm/PRODUCT_LINK.txt` → `QVM_PRODUCT_ROOT` | `scripts\link-qvm.cmd` |
+| `JA21_PORTABLE_ROOT` | `optical-desktop/PRODUCT_LINK.txt` → `JA21_PORTABLE_ROOT` | `scripts\link-optical-desktop.cmd` |
+| `BOTTLE_ROCKET_PRODUCT_ROOT` | `mobile-platform/bottle-rocket/PRODUCT_LINK.txt` | `scripts\link-mobile-platform.cmd` |
+| `IOS735_PRODUCT_ROOT` | `mobile-platform/nodes/ios-lctl/PRODUCT_LINK.txt` → `PRODUCT_ROOT` | same |
+| `LINEAR_ANDROID_PRODUCT_ROOT` | `mobile-platform/nodes/android-lctl/PRODUCT_LINK.txt` → `PRODUCT_ROOT` | same |
+| `RODEO_PRODUCT_ROOT` | `mobile-platform/nodes/android-lctl/sidecar-rodeo/PRODUCT_LINK.txt` → `PRODUCT_ROOT` | same |
+
+Quick path for this workstation:
+
+```bat
+scripts\configure-product-links.cmd
+scripts\link-qvm.cmd
+scripts\link-optical-desktop.cmd
+scripts\link-mobile-platform.cmd
+```
+
+See `*/PRODUCT_LINK.example` for commented absolute-path examples. Never commit `ACCESS_TOKEN.txt` or junction payloads under `qvm/product/`, `optical-desktop/portable/`, or `mobile-platform/**/product/`.
+
+## License
 **Product Preview Tester License** (root [`LICENSE`](LICENSE)). Copyright notice: **RUSSELL PHILIP SMITHSON** ([`COPYRIGHT`](COPYRIGHT)). Component trees keep their own notices (`containership/LICENSE`, `bridge-terminal/LICENSE`, JA21 when linked).
 
 ## Windows-safe notes
@@ -83,10 +106,10 @@ Fleet / HBT/
 
 ## Docs
 
-- [`docs/Harbor-Bridge-Terminal-Technical-Note.md`](docs/Harbor-Bridge-Terminal-Technical-Note.md) — platform monograph
-- [`README_WINDOWS_SAFE.md`](README_WINDOWS_SAFE.md) — WinSafe package notes
-- [`WINDOWS_PATH_MAP.json`](WINDOWS_PATH_MAP.json) — wrapper path remapping
+- [`docs/Harbor-Bridge-Terminal-Technical-Note.md`](docs/Harbor-Bridge-Terminal-Technical-Note.md) â€” platform monograph
+- [`README_WINDOWS_SAFE.md`](README_WINDOWS_SAFE.md) â€” WinSafe package notes
+- [`WINDOWS_PATH_MAP.json`](WINDOWS_PATH_MAP.json) â€” wrapper path remapping
 
 ## Security hygiene
 
-This public repo must not contain live access tokens, private keys, or principal stores. Patterns such as `ACCESS_TOKEN.txt`, `.env*`, `**/principals/`, and `*.pem` are gitignored. Public release-signing PEMs under containership cargo (if present) may still be excluded by `*.pem`; rematerialize from your sealed release process if needed.
+This public repo must not contain live access tokens, private keys, or principal stores. Patterns such as `ACCESS_TOKEN.txt`, `.env*`, `**/principals/`, and `*.pem` are gitignored. Public release-signing PEMs under containership cargo (if present) may still be excluded by `*.pem`; rematerialize from your sealed release process if needed.

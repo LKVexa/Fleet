@@ -1,4 +1,4 @@
 QVM_PRODUCT_ROOT=
 QVM_VERSION=8.1.0-alpha
 LINK_TARGET=qvm\product
-NOTE=Set QVM_PRODUCT_ROOT in the environment or edit this file. The external QVM payload is intentionally not bundled.
+NOTE=Set QVM_PRODUCT_ROOT env, edit this file, copy from PRODUCT_LINK.example, or run scripts\configure-product-links.cmd. External QVM is not bundled.
