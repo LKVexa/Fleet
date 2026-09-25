@@ -1,4 +1,4 @@
-﻿# Fleet
+# Fleet
 
 **Fleet** is the Windows-safe **Harbor Bridge Terminal (HBT) 2.1.0-cubby.2** package: containership yard + HERMIT/SPIRAL bridge + Qnode/DF/mobile **cubbies**, projected in-browser on loopback (no VM download).
 
