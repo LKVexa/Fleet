@@ -1,0 +1,70 @@
+{
+  "schema": "harbor.external-dependencies.v1",
+  "release": "2.1.0-cubby.2",
+  "dependencies": [
+    {
+      "id": "qvm",
+      "version": "8.1.0-alpha",
+      "env": "QVM_PRODUCT_ROOT",
+      "link_file": "qvm/PRODUCT_LINK.txt",
+      "sentinel": "qvm/cli.py",
+      "bundled": false,
+      "sha256": null,
+      "hash_status": "unavailable: product payload not present in this archive"
+    },
+    {
+      "id": "ja21",
+      "version": "9.8.7",
+      "env": "JA21_PORTABLE_ROOT",
+      "link_file": "optical-desktop/PRODUCT_LINK.txt",
+      "sentinel": "Start JA21 Portable Desktop.cmd",
+      "bundled": false,
+      "sha256": null,
+      "hash_status": "unavailable: portable payload not present in this archive"
+    },
+    {
+      "id": "bottle-rocket",
+      "version": "3.0.0-MODEL_OPERATIONAL_110K",
+      "env": "BOTTLE_ROCKET_PRODUCT_ROOT",
+      "link_file": "mobile-platform/bottle-rocket/PRODUCT_LINK.txt",
+      "link_key": "BOTTLE_ROCKET_PRODUCT_ROOT",
+      "sentinel": "MANIFEST.json",
+      "bundled": false,
+      "sha256": null,
+      "hash_status": "unavailable: external VM substrate payload not present in this archive"
+    },
+    {
+      "id": "ios735-lctl",
+      "version": "0.1.0",
+      "env": "IOS735_PRODUCT_ROOT",
+      "link_file": "mobile-platform/nodes/ios-lctl/PRODUCT_LINK.txt",
+      "link_key": "PRODUCT_ROOT",
+      "sentinel": "README.md",
+      "bundled": false,
+      "sha256": null,
+      "hash_status": "unavailable: external mobile app-node payload not present in this archive"
+    },
+    {
+      "id": "linear-android-lctl",
+      "version": "0.1.0",
+      "env": "LINEAR_ANDROID_PRODUCT_ROOT",
+      "link_file": "mobile-platform/nodes/android-lctl/PRODUCT_LINK.txt",
+      "link_key": "PRODUCT_ROOT",
+      "sentinel": "TRANSLATION_REPORT.md",
+      "bundled": false,
+      "sha256": null,
+      "hash_status": "unavailable: external mobile app-node payload not present in this archive"
+    },
+    {
+      "id": "rodeo-sidecar",
+      "version": "0.1.0",
+      "env": "RODEO_PRODUCT_ROOT",
+      "link_file": "mobile-platform/nodes/android-lctl/sidecar-rodeo/PRODUCT_LINK.txt",
+      "link_key": "PRODUCT_ROOT",
+      "sentinel": "rodeo.cmd",
+      "bundled": false,
+      "sha256": null,
+      "hash_status": "unavailable: external Android build sidecar payload not present in this archive"
+    }
+  ]
+}

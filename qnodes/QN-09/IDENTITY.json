@@ -1,0 +1,10 @@
+{
+  "id": "QN-09",
+  "code": "qn09",
+  "index": 9,
+  "product": "QVM 8.1.0-alpha",
+  "copy": true,
+  "product_root": ".",
+  "backend_default": "statevector",
+  "created": "2026-09-25T20:01:58.290Z"
+}

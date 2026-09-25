@@ -1,0 +1,868 @@
+{
+  "schema": "harbor.windows-path-map.v1",
+  "release": "2.1.0-cubby.2",
+  "source_release": "2.1.0-cubby.1",
+  "root_name": "HBT",
+  "mappings": [
+    {
+      "from": "containership/edge/atoms/gap01_edge_node_supervisor",
+      "to": "containership/edge/atoms/gap01",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap01_edge_node_supervisor/gap01_edge_node_supervisor",
+      "to": "containership/edge/atoms/gap01/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap02_hardware_capability_discovery",
+      "to": "containership/edge/atoms/gap02",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap02_hardware_capability_discovery/gap02_hardware_capability_discovery",
+      "to": "containership/edge/atoms/gap02/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap03_topology_aware_scheduler",
+      "to": "containership/edge/atoms/gap03",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap03_topology_aware_scheduler/gap03_topology_aware_scheduler",
+      "to": "containership/edge/atoms/gap03/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap04_disconnected_operation_controller",
+      "to": "containership/edge/atoms/gap04",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap05_state_replication_consistency_model",
+      "to": "containership/edge/atoms/gap05",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap05_state_replication_consistency_model/gap05_state_replication_consistency_model",
+      "to": "containership/edge/atoms/gap05/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap06_device_identity_and_attestation",
+      "to": "containership/edge/atoms/gap06",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap06_device_identity_and_attestation/gap06_device_identity_and_attestation",
+      "to": "containership/edge/atoms/gap06/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap07_artifact_provenance_signing",
+      "to": "containership/edge/atoms/gap07",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap08_ota_lifecycle_rollback",
+      "to": "containership/edge/atoms/gap08",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap08_ota_lifecycle_rollback/gap08_ota_lifecycle_rollback",
+      "to": "containership/edge/atoms/gap08/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap09_unified_observability",
+      "to": "containership/edge/atoms/gap09",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap09_unified_observability/gap09_unified_observability",
+      "to": "containership/edge/atoms/gap09/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap10_power_thermal_aware_scheduling",
+      "to": "containership/edge/atoms/gap10",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap10_power_thermal_aware_scheduling/gap10_power_thermal_aware_scheduling",
+      "to": "containership/edge/atoms/gap10/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap11_accelerator_scheduling",
+      "to": "containership/edge/atoms/gap11",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap11_accelerator_scheduling/gap11_accelerator_scheduling",
+      "to": "containership/edge/atoms/gap11/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap12_wan_resilience_and_nat_traversal",
+      "to": "containership/edge/atoms/gap12",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap12_wan_resilience_and_nat_traversal/gap12_wan_resilience_and_nat_traversal",
+      "to": "containership/edge/atoms/gap12/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap13_policy_engine",
+      "to": "containership/edge/atoms/gap13",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap13_policy_engine/gap13_policy_engine",
+      "to": "containership/edge/atoms/gap13/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap14_data_gravity_manager",
+      "to": "containership/edge/atoms/gap14",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap15_runtime_compatibility_certification",
+      "to": "containership/edge/atoms/gap15",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/gap15_runtime_compatibility_certification/gap15_runtime_compatibility_certification",
+      "to": "containership/edge/atoms/gap15/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv02_container_substrate",
+      "to": "containership/edge/atoms/inv02",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv02_container_substrate/inv02_container_substrate",
+      "to": "containership/edge/atoms/inv02/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv03_container_hardening",
+      "to": "containership/edge/atoms/inv03",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv03_container_hardening/inv03_container_hardening",
+      "to": "containership/edge/atoms/inv03/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv04_current_orchestration",
+      "to": "containership/edge/atoms/inv04",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv04_current_orchestration/inv04_current_orchestration",
+      "to": "containership/edge/atoms/inv04/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv05_current_control_state_system",
+      "to": "containership/edge/atoms/inv05",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv05_current_control_state_system/inv05_current_control_state_system",
+      "to": "containership/edge/atoms/inv05/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv06_traditional_iac",
+      "to": "containership/edge/atoms/inv06",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv06_traditional_iac/inv06_traditional_iac",
+      "to": "containership/edge/atoms/inv06/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv07_gitops_transition_layer",
+      "to": "containership/edge/atoms/inv07",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv07_gitops_transition_layer/inv07_gitops_transition_layer",
+      "to": "containership/edge/atoms/inv07/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv08_dynamic_infrastructure_model",
+      "to": "containership/edge/atoms/inv08",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv08_dynamic_infrastructure_model/inv08_dynamic_infrastructure_model",
+      "to": "containership/edge/atoms/inv08/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv09_portable_compute_isa",
+      "to": "containership/edge/atoms/inv09",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv09_portable_compute_isa/inv09_portable_compute_isa",
+      "to": "containership/edge/atoms/inv09/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv10_component_composition_system",
+      "to": "containership/edge/atoms/inv10",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv10_component_composition_system/inv10_component_composition_system_v4.3.0",
+      "to": "containership/edge/atoms/inv10/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv11_interface_contract_language",
+      "to": "containership/edge/atoms/inv11",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv11_interface_contract_language/inv11_interface_contract_language",
+      "to": "containership/edge/atoms/inv11/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv12_language_interoperability",
+      "to": "containership/edge/atoms/inv12",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv12_language_interoperability/inv12_language_interoperability",
+      "to": "containership/edge/atoms/inv12/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv13_system_interface",
+      "to": "containership/edge/atoms/inv13",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv13_system_interface/inv13_system_interface",
+      "to": "containership/edge/atoms/inv13/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv14_previous_asynchronous_model",
+      "to": "containership/edge/atoms/inv14",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv14_previous_asynchronous_model/inv14_previous_asynchronous_model",
+      "to": "containership/edge/atoms/inv14/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv15_new_asynchronous_abi",
+      "to": "containership/edge/atoms/inv15",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv15_new_asynchronous_abi/inv15_new_asynchronous_abi",
+      "to": "containership/edge/atoms/inv15/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv16_async_component_functions",
+      "to": "containership/edge/atoms/inv16",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv16_async_component_functions/inv16_async_component_functions",
+      "to": "containership/edge/atoms/inv16/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv17_streaming_primitive",
+      "to": "containership/edge/atoms/inv17",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv17_streaming_primitive/inv17_streaming_primitive",
+      "to": "containership/edge/atoms/inv17/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv18_completion_primitive",
+      "to": "containership/edge/atoms/inv18",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv18_completion_primitive/inv18_completion_primitive",
+      "to": "containership/edge/atoms/inv18/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv19_os_asynchronous_analogues",
+      "to": "containership/edge/atoms/inv19",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv19_os_asynchronous_analogues/inv19_os_asynchronous_analogues",
+      "to": "containership/edge/atoms/inv19/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv20_http_component_worlds",
+      "to": "containership/edge/atoms/inv20",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv20_http_component_worlds/inv20_http_component_worlds",
+      "to": "containership/edge/atoms/inv20/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv21_local_service_chaining",
+      "to": "containership/edge/atoms/inv21",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv22_alternative_wasi_branch",
+      "to": "containership/edge/atoms/inv22",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv22_alternative_wasi_branch/inv22_alternative_wasi_branch",
+      "to": "containership/edge/atoms/inv22/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv23_hardware_virtualization_primitive",
+      "to": "containership/edge/atoms/inv23",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv23_hardware_virtualization_primitive/inv23_hardware_virtualization_primitive",
+      "to": "containership/edge/atoms/inv23/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv24_microvm_runtime",
+      "to": "containership/edge/atoms/inv24",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv25_microvm_devices",
+      "to": "containership/edge/atoms/inv25",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv25_microvm_devices/inv25_microvm_devices",
+      "to": "containership/edge/atoms/inv25/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv26_microvm_snapshotting",
+      "to": "containership/edge/atoms/inv26",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv26_microvm_snapshotting/inv26_microvm_snapshotting",
+      "to": "containership/edge/atoms/inv26/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv27_unikernel_execution",
+      "to": "containership/edge/atoms/inv27",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv27_unikernel_execution/inv27_unikernel_execution",
+      "to": "containership/edge/atoms/inv27/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv28_unikernel_implementations",
+      "to": "containership/edge/atoms/inv28",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv28_unikernel_implementations/inv28_unikernel_implementations",
+      "to": "containership/edge/atoms/inv28/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv29_hybrid_wasm_unikernel",
+      "to": "containership/edge/atoms/inv29",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv29_hybrid_wasm_unikernel/inv29_hybrid_wasm_unikernel",
+      "to": "containership/edge/atoms/inv29/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv30_capability_hardware_sandbox",
+      "to": "containership/edge/atoms/inv30",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv30_capability_hardware_sandbox/inv30_capability_hardware_sandbox",
+      "to": "containership/edge/atoms/inv30/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv31_function_execution_architecture",
+      "to": "containership/edge/atoms/inv31",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv31_function_execution_architecture/inv31_function_execution_architecture",
+      "to": "containership/edge/atoms/inv31/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv32_elastic_virtualization",
+      "to": "containership/edge/atoms/inv32",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv34_legacy_cpu_expansion_path",
+      "to": "containership/edge/atoms/inv34",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv34_legacy_cpu_expansion_path/inv34_legacy_cpu_expansion_path",
+      "to": "containership/edge/atoms/inv34/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv35_high_performance_vm_i_o",
+      "to": "containership/edge/atoms/inv35",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv35_high_performance_vm_i_o/inv35_high_performance_vm_i_o",
+      "to": "containership/edge/atoms/inv35/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv36_control_transport",
+      "to": "containership/edge/atoms/inv36",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv36_control_transport/inv36_control_transport",
+      "to": "containership/edge/atoms/inv36/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv37_bulk_data_plane",
+      "to": "containership/edge/atoms/inv37",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv37_bulk_data_plane/inv37_bulk_data_plane",
+      "to": "containership/edge/atoms/inv37/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv38_kernel_bypass_transport",
+      "to": "containership/edge/atoms/inv38",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv38_kernel_bypass_transport/inv38_kernel_bypass_transport",
+      "to": "containership/edge/atoms/inv38/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv39_process_sandbox_tier",
+      "to": "containership/edge/atoms/inv39",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv39_process_sandbox_tier/inv39_process_sandbox_tier",
+      "to": "containership/edge/atoms/inv39/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv40_full_virtualization_tier",
+      "to": "containership/edge/atoms/inv40",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv40_full_virtualization_tier/inv40_full_virtualization_tier",
+      "to": "containership/edge/atoms/inv40/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv41_capability_security",
+      "to": "containership/edge/atoms/inv41",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv41_capability_security/inv41_capability_security",
+      "to": "containership/edge/atoms/inv41/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv42_capability_descriptors",
+      "to": "containership/edge/atoms/inv42",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv42_capability_descriptors/inv42_capability_descriptors",
+      "to": "containership/edge/atoms/inv42/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv43_transient_execution_defense",
+      "to": "containership/edge/atoms/inv43",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv43_transient_execution_defense/inv43_transient_execution_defense",
+      "to": "containership/edge/atoms/inv43/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv44_wasm_hardening_system",
+      "to": "containership/edge/atoms/inv44",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv44_wasm_hardening_system/inv44_wasm_hardening_system",
+      "to": "containership/edge/atoms/inv44/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv45_sfi_mechanisms",
+      "to": "containership/edge/atoms/inv45",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv45_sfi_mechanisms/inv45_sfi_mechanisms",
+      "to": "containership/edge/atoms/inv45/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv52_messaging_abstraction",
+      "to": "containership/edge/atoms/inv52",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv52_messaging_abstraction/inv52_messaging_abstraction",
+      "to": "containership/edge/atoms/inv52/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv53_message_reliability",
+      "to": "containership/edge/atoms/inv53",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv53_message_reliability/inv53_message_reliability",
+      "to": "containership/edge/atoms/inv53/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv54_broker_implementations",
+      "to": "containership/edge/atoms/inv54",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv55_secrets_integration",
+      "to": "containership/edge/atoms/inv55",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv55_secrets_integration/inv55_secrets_integration",
+      "to": "containership/edge/atoms/inv55/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv57_durable_execution",
+      "to": "containership/edge/atoms/inv57",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv57_durable_execution/inv57_durable_execution",
+      "to": "containership/edge/atoms/inv57/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv58_existing_service_mesh_layer",
+      "to": "containership/edge/atoms/inv58",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv58_existing_service_mesh_layer/inv58_existing_service_mesh_layer",
+      "to": "containership/edge/atoms/inv58/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv60_wasm_application_fabric",
+      "to": "containership/edge/atoms/inv60",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv61_distributed_wit_rpc",
+      "to": "containership/edge/atoms/inv61",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv61_distributed_wit_rpc/inv61_distributed_wit_rpc",
+      "to": "containership/edge/atoms/inv61/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv62_edge_topology",
+      "to": "containership/edge/atoms/inv62",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv62_edge_topology/inv62_edge_topology",
+      "to": "containership/edge/atoms/inv62/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv63_wasm_deployment_manager",
+      "to": "containership/edge/atoms/inv63",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv63_wasm_deployment_manager/inv63_wasm_deployment_manager",
+      "to": "containership/edge/atoms/inv63/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv64_application_model",
+      "to": "containership/edge/atoms/inv64",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv64_application_model/inv64_application_model",
+      "to": "containership/edge/atoms/inv64/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv65_capability_providers",
+      "to": "containership/edge/atoms/inv65",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv65_capability_providers/inv65_capability_providers",
+      "to": "containership/edge/atoms/inv65/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv66_enterprise_wasm_control_plane",
+      "to": "containership/edge/atoms/inv66",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv66_enterprise_wasm_control_plane/inv66_enterprise_wasm_control_plane",
+      "to": "containership/edge/atoms/inv66/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv67_kubernetes_integration_mechanism",
+      "to": "containership/edge/atoms/inv67",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv67_kubernetes_integration_mechanism/inv67_kubernetes_integration_mechanism",
+      "to": "containership/edge/atoms/inv67/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv68_resource_packing",
+      "to": "containership/edge/atoms/inv68",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv68_resource_packing/inv68_resource_packing",
+      "to": "containership/edge/atoms/inv68/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv69_agentic_workload_layer",
+      "to": "containership/edge/atoms/inv69",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv69_agentic_workload_layer/inv69_agentic_workload_layer",
+      "to": "containership/edge/atoms/inv69/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv70_fast_agent_sandbox",
+      "to": "containership/edge/atoms/inv70",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv70_fast_agent_sandbox/inv70_fast_agent_sandbox",
+      "to": "containership/edge/atoms/inv70/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv71_heavy_agent_sandbox",
+      "to": "containership/edge/atoms/inv71",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv71_heavy_agent_sandbox/inv71_heavy_agent_sandbox",
+      "to": "containership/edge/atoms/inv71/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv72_accelerated_workload_requirement",
+      "to": "containership/edge/atoms/inv72",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/inv72_accelerated_workload_requirement/inv72_accelerated_workload_requirement",
+      "to": "containership/edge/atoms/inv72/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/ios735_lctl",
+      "to": "containership/edge/atoms/ios735",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/ios735_lctl/iOS735_LCTL_v0.2.0",
+      "to": "containership/edge/atoms/ios735/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln01_intent_plane",
+      "to": "containership/edge/atoms/pln01",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln01_intent_plane/pln01_intent_plane",
+      "to": "containership/edge/atoms/pln01/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln02_application_plane",
+      "to": "containership/edge/atoms/pln02",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln02_application_plane/pln02_application_plane",
+      "to": "containership/edge/atoms/pln02/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln03_distributed_runtime_plane",
+      "to": "containership/edge/atoms/pln03",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln03_distributed_runtime_plane/pln03_distributed_runtime_plane",
+      "to": "containership/edge/atoms/pln03/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln04_execution_plane",
+      "to": "containership/edge/atoms/pln04",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln04_execution_plane/pln04_execution_plane",
+      "to": "containership/edge/atoms/pln04/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln05_elasticity_plane",
+      "to": "containership/edge/atoms/pln05",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln05_elasticity_plane/pln05_elasticity_plane",
+      "to": "containership/edge/atoms/pln05/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln06_data_plane",
+      "to": "containership/edge/atoms/pln06",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln06_data_plane/pln06_data_plane",
+      "to": "containership/edge/atoms/pln06/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln07_security_plane",
+      "to": "containership/edge/atoms/pln07",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/pln07_security_plane/pln07_security_plane",
+      "to": "containership/edge/atoms/pln07/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/sch01_workload_classification_and_runtime_placem",
+      "to": "containership/edge/atoms/sch01",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/atoms/sch01_workload_classification_and_runtime_placem/sch01_workload_classification_and_runtime_placem",
+      "to": "containership/edge/atoms/sch01/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/variants/inv30_capability_hardware_sandbox_v4.2.0_hardened(1)",
+      "to": "containership/edge/variants/inv30v420h1",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/variants/inv30_capability_hardware_sandbox_v4.2.0_hardened(1)/inv30_capability_hardware_sandbox",
+      "to": "containership/edge/variants/inv30v420h1/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/variants/inv55_secrets_integration_v4.3.0",
+      "to": "containership/edge/variants/inv55v430",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/variants/inv55_secrets_integration_v4.3.0/inv55_secrets_integration_v4.3.0",
+      "to": "containership/edge/variants/inv55v430/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/variants/inv61_distributed_wit_rpc_v4.3.0",
+      "to": "containership/edge/variants/inv61v430",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/variants/inv61_distributed_wit_rpc_v4.3.0/inv61_distributed_wit_rpc",
+      "to": "containership/edge/variants/inv61v430/pkg",
+      "kind": "redundant-wrapper"
+    },
+    {
+      "from": "containership/edge/variants/inv66_enterprise_wasm_control_plane_v4.3.0",
+      "to": "containership/edge/variants/inv66v430",
+      "kind": "outer-wrapper"
+    },
+    {
+      "from": "containership/edge/variants/inv66_enterprise_wasm_control_plane_v4.3.0/inv66_enterprise_wasm_control_plane_v4.3.0",
+      "to": "containership/edge/variants/inv66v430/pkg",
+      "kind": "redundant-wrapper"
+    }
+  ]
+}

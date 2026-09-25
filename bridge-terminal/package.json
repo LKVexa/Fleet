@@ -1,0 +1,86 @@
+{
+  "name": "hermit-spiral-terminal",
+  "productName": "HERMIT",
+  "version": "2.1.0-cubby.2",
+  "description": "HERMIT / Harbor Bridge Terminal \u2014 hermit.vws.v2 RAM-resident terminal gateway with bounded allocation ledger, byte credits, worker-thread sessions, DF fabric control surface, and Cubby/Bottle Rocket mobile projection.",
+  "author": "David Paul Russell",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "check": "node scripts/syntax-check.js",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win --x64",
+    "pack": "electron-builder --dir",
+    "gateway": "node gateway/server.js",
+    "test": "node tools/run-tests.js",
+    "test:core": "node tools/run-tests.js --core",
+    "test:mobile": "node tools/run-tests.js --mobile",
+    "test:parallel": "node tools/run-tests.js --parallel",
+    "test:ui": "node --test tests/ui/browser.test.js",
+    "test:load": "node tests/load/bench.js",
+    "seal": "node tools/release-seal.js",
+    "verify": "node tools/verify.js",
+    "release:verify": "npm run check && npm test && npm run verify",
+    "start:web": "node tools/start-local.js",
+    "experiment": "node tests/load/experiment.js"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "org.linearfinance.hermit",
+    "productName": "HERMIT",
+    "copyright": "Copyright \u00a9 2026 David Paul Russell",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "src/**/*",
+      "client/**/*",
+      "protocol/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "vendor/browser",
+        "to": "browser",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "HERMIT-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": false
+    },
+    "portable": {
+      "artifactName": "HERMIT-${version}-portable.exe"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

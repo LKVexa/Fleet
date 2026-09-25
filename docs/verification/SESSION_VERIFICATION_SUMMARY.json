@@ -1,0 +1,42 @@
+{
+  "generated_pt": "2026-09-25 13:40 PT",
+  "definition_of_backtesting": "Historical / regression verification of platform behaviors (fleet load audit replay, CLI selftests, configuration regression, start-path dry checks). Not market/trading PnL.",
+  "prior_full_audit": {
+    "path": "fleet/QNODE_LOAD_AUDIT.json",
+    "date_pt": "09/25/2026, 13:23:42 PDT",
+    "overall_pass": "50/50",
+    "cited_not_rerun_full": true,
+    "reason": "Full 50-node audit (~minutes) already completed same day; spot-check + inventory replay used instead"
+  },
+  "probes_run_this_session": {
+    "script_presence": "21/21",
+    "fleet_inventory_keys": "50/50",
+    "independence_marker": "PASS",
+    "fleet_alignment": "PASS (full-copies, 50 qnodes, df ns/nm/nl/nx/nf)",
+    "start_local_dry": "syntax_ok; deletes VWS_SNAPSHOTS; pickPort; JA21_ALLOW_PRIVATE_HOSTS",
+    "secrets_gitignore": "ACCESS_TOKEN and principals untracked; patterns present",
+    "load_spotcheck": "QN-01/QN-25/QN-50 info+selftest+bell = 9/9 PASS",
+    "bridge_unit_subset": "30/30 PASS (protocol bridge+codec, ram descriptor+ledger, gateway config)",
+    "optical_desktop_link": "portable start cmd + Start-JA21Browser.ps1 present",
+    "containership_edge_status": "recorded evidence cited: 86 atoms, 59 SUITE_GREEN, 27 SUITE_RED, 9833 passed, 41 failed (from EDGE_TEST_RESULTS.json; not a live full re-pytest)",
+    "spiral_landing_http_ws": "PASS controlled gateway 127.0.0.1:10003 --no-browser; health/live/config/landing 200; ticket 200/401; WS upgrade 101x2; locator 50/50 operable; see docs/verification/spiral-landing/"
+  },
+  "not_exercised": [
+    "JA21 omni-window interactive sign-in + visual SPIRAL fleet board",
+    "Full hermit.vws.v2 session-open VT banner byte decode",
+    "Full npm test suite (chaos/fabric/e2e)",
+    "Full scripts/audit-qnode-load.cmd re-run of all 50 (prior audit same day retained; spot-check used)",
+    "Containership uc.py verify --quick full battery",
+    "PDF/HTML export of technical note",
+    "Commit of bridge-terminal/package-lock.json (left untracked by design)"
+  ],
+  "harbor_lifecycle_spiral_session": {
+    "started": "node tools/start-local.js --no-browser --port 10003",
+    "stopped_after_probes": true,
+    "left_running": [
+      "10000 non-Harbor hermit",
+      "10001 Harbor",
+      "10002 Harbor"
+    ]
+  }
+}

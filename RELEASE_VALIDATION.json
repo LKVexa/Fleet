@@ -1,0 +1,160 @@
+{
+  "schema": "harbor.release-validation.v1",
+  "release": "2.1.0-cubby.2",
+  "date": "2026-09-25",
+  "source_basis": "Harbor Bridge Terminal 2.1.0-cubby.1, repackaged with Windows-safe path normalization based on observed MAX_PATH extraction failure",
+  "environment": {
+    "node": "v22.16.0",
+    "platform": "linux 6.18.44",
+    "cpus": 5,
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz"
+  },
+  "verification": {
+    "syntax": {
+      "passed": 95,
+      "failed": 0
+    },
+    "targeted_core": {
+      "passed": 64,
+      "failed": 0,
+      "skipped": 6,
+      "skip_reason": "external DF containers not bundled"
+    },
+    "chaos_lifecycle": {
+      "passed": 11,
+      "failed": 0
+    },
+    "review_ram_ledger": {
+      "passed": 24,
+      "failed": 0
+    },
+    "ram_v2_e2e": {
+      "passed": 7,
+      "failed": 0
+    },
+    "mobile_unit": {
+      "passed": 4,
+      "failed": 0
+    },
+    "websocket_conformance": {
+      "passed": 15,
+      "failed": 0,
+      "execution": "two deterministic name-filtered groups to avoid tool wall-clock ceiling"
+    },
+    "release_manifest": {
+      "status": "PASS",
+      "candidate": "2.1.0-cubby.2",
+      "files": 295,
+      "hash_failures": 0,
+      "unlisted": 0,
+      "version_mismatch": false
+    },
+    "external_products": {
+      "status": "EXTERNALS_MISSING",
+      "expected": 6,
+      "note": "QVM, JA21, Bottle Rocket, iOS LCTL, Linear Android LCTL, and RODEO payloads are intentionally external and are not hashed as if bundled."
+    }
+  },
+  "benchmark": {
+    "scope": "loopback, single host, in-process gateway; not a deployment measurement",
+    "sessions_requested": 8,
+    "sessions_admitted": 8,
+    "w1_echo_roundtrip_ms": {
+      "samples": 300,
+      "p50": 0.767,
+      "p95": 2.099,
+      "p99": 3.846,
+      "max": 9.144
+    },
+    "w2_bulk_output": {
+      "raw_bytes": 6178093,
+      "frames": 809,
+      "seconds": 1.51,
+      "MiBps": 3.9,
+      "application_protocol_bytes": 6183756,
+      "application_protocol_expansion": 1.000917,
+      "data_header_bytes_per_frame": 7
+    },
+    "w3_concurrency": {
+      "sessions": 8,
+      "open_ms": {
+        "p50": 136,
+        "max": 150
+      },
+      "thread_heap_used_mib": {
+        "samples": 8,
+        "min": 7.22,
+        "max": 7.36,
+        "mean": 7.28
+      },
+      "gateway_rss_mib": {
+        "before": 114.8,
+        "with_sessions": 157.7
+      }
+    }
+  },
+  "change_set_vs_uploaded_snapshot": {
+    "added_files": 14,
+    "removed_files": 0,
+    "changed_files": 77,
+    "note": "final counts include RELEASE_VALIDATION.json itself; 50 changed Qnode README files are portable path normalization only."
+  },
+  "limitations": [
+    "External DF/QVM/JA21/mobile-product payloads are not bundled in the submitted archive.",
+    "Windows brctl.exe process execution was not freshly executable on this Linux review host; host-aware behavior is unit-tested and archived Windows brctl evidence remains separate.",
+    "Clean-room containership and expanded multi-host R28 experiments remain environment/experiment work, not source-code closure."
+  ],
+  "windows_path_safety": {
+    "status": "PASS",
+    "source_release": "2.1.0-cubby.1",
+    "archive_root": "HBT",
+    "max_archive_relative_path_chars": 153,
+    "max_archive_relative_path": "HBT/containership/edge/atoms/ios735/pkg/input/iOS735_Skeleton/Sources/P08ConcurrencyAndPerformanceArchitecture/C0163OperationQueuesWhereAppropriate.swift",
+    "previous_max_archive_relative_path_chars": 232,
+    "reduction_chars": 79,
+    "conservative_absolute_path_ceiling": 240,
+    "legacy_windows_max_path": 260,
+    "stale_original_wrapper_path_references_excluding_path_map": 0,
+    "path_map": "WINDOWS_PATH_MAP.json",
+    "preflight": "WINDOWS_PATH_PREFLIGHT.cmd",
+    "recommended_roots": [
+      "D:\\HBT",
+      "C:\\HBT"
+    ]
+  },
+  "repack_verification": {
+    "bridge_syntax": {
+      "passed": 95,
+      "failed": 0
+    },
+    "bridge_release_manifest": {
+      "status": "PASS",
+      "candidate": "2.1.0-cubby.2",
+      "files": 295,
+      "hash_failures": 0,
+      "unlisted": 0,
+      "version_mismatch": false
+    },
+    "mobile_unit": {
+      "passed": 4,
+      "failed": 0
+    },
+    "containership_checksum_inventory": {
+      "status": "PASS",
+      "bound_ok": 20164,
+      "bad": 0,
+      "missing": 0,
+      "unbound": 0,
+      "errors": 0
+    },
+    "bridge_core_spot_rerun": {
+      "observed_passes_before_execution_window": 46,
+      "observed_failures": 0,
+      "status": "PARTIAL_NOT_FULL_SUITE"
+    },
+    "containership_quick_battery": {
+      "status": "NOT_COMPLETED_IN_EXECUTION_WINDOW",
+      "note": "Integrity primitives completed successfully; no interrupted run is represented as PASS."
+    }
+  }
+}
